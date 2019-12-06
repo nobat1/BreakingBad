@@ -19,26 +19,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="415" height="431"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Psj-eb-WOa">
-                        <rect key="frame" x="12" y="15" width="391" height="365"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-Mv-6rA">
-                        <rect key="frame" x="12" y="395" width="391" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eD0-YE-76h">
+                        <rect key="frame" x="12" y="15" width="391" height="385.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Psj-eb-WOa">
+                                <rect key="frame" x="0.0" y="0.0" width="391" height="365"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHA-Mv-6rA">
+                                <rect key="frame" x="0.0" y="365" width="391" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
             </view>
-            <constraints>
-                <constraint firstItem="wHA-Mv-6rA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="1gw-5y-v1e"/>
-                <constraint firstItem="Psj-eb-WOa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="S9Y-a0-Cw8"/>
-                <constraint firstItem="wHA-Mv-6rA" firstAttribute="top" secondItem="Psj-eb-WOa" secondAttribute="bottom" constant="15" id="YFQ-Ny-Qio"/>
-                <constraint firstItem="Psj-eb-WOa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="qiR-fz-1wt"/>
-                <constraint firstAttribute="trailing" secondItem="wHA-Mv-6rA" secondAttribute="trailing" constant="12" id="qis-sK-sQB"/>
-                <constraint firstAttribute="trailing" secondItem="Psj-eb-WOa" secondAttribute="trailing" constant="12" id="tee-3A-SEK"/>
-                <constraint firstAttribute="bottom" secondItem="wHA-Mv-6rA" secondAttribute="bottom" constant="15" id="w8s-Kd-rvR"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="415" height="431"/>
             <connections>
