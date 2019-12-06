@@ -1,0 +1,6 @@
+framework module Pods_Breaking_BadUITests {
+  umbrella header "Pods-Breaking BadUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
